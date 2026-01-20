@@ -5,7 +5,7 @@ from torchvision import models, transforms
 from PIL import Image
 
 # 1. Завантаження даних про класи (ті, що збереглися в моделі)
-checkpoint = torch.load("garden_expert_model.pth", map_location="cpu")
+checkpoint = torch.load("garden_expert_model_v2.pth", map_location="cpu")
 all_classes = checkpoint['classes']
 
 # 2. Словник порад українською для всіх культур
